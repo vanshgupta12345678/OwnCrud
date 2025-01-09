@@ -46,6 +46,7 @@ exports.Update=async(req,res)=>{
     }
 }
 
+//Update
 exports.updateData = async (req, res) => {
     try {
       const { Fname,Lname,Email,Password} = req.body;
@@ -71,6 +72,8 @@ exports.updateData = async (req, res) => {
     }
 };
 
+
+//Delete
 exports.deleteData = async (req, res) => {
     try {
       const id  = req.params.id;
@@ -83,4 +86,3 @@ exports.deleteData = async (req, res) => {
       res.status(500).json({ message: "Error deleting user" });
     }
 }
-//changedvehfvhefvfhvcfbfdhdffdfddwwqwqwqvhwvhvwhgwhvvvvvvvv
